@@ -31,4 +31,14 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'alphavantage' => [
+        'url' => env('NASDAQ_SCREENER_URL', 'https://www.alphavantage.co/query'),
+        'key' => env('NASDAQ_SCREENER_KEY', 'ME07D4IZ0POA8ZM4'),
+    ],
+    
+    'iex' => [
+        'url' => env('IEX_REALTIME_URL', 'https://cloud.iexapis.com'),
+        'key' => env('IEX_REALTIME_KEY', 'pk_f559d2583d404e9e8f7288cc2e1e55df') 
+    ]
+
 ];
