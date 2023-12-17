@@ -1,7 +1,7 @@
 <div>
     <div class="flex flex-col sm:flex-row mx-auto p-6 ">
         <div class="text-center mb-6 sm:mb-0 sm:mr-6 basis-1/3">
-            <img src="{{ asset('storage/'.$company->logo) }}" alt="{{ $company->name }} Logo" class="rounded-full h-80 w-80 mx-auto mb-2">
+            <img src="{{ asset($company->logo) }}" alt="{{ $company->name }} Logo" class="rounded-full h-80 w-80 mx-auto mb-2">
         </div>
         <div class="basis-2/3 pt-6">
             <div class="mb-4">
@@ -24,6 +24,7 @@
             </div>
         </div>
     </div>
+
     <livewire:company-details :symbol="$company->symbol"/>
     
     <livewire:company-historical-data :symbol="$company->symbol"/>

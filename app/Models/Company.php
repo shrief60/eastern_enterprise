@@ -12,6 +12,14 @@ class Company extends Model
 
     protected $fillable = ['name', 'logo', 'description', 'address', 'owner_id', 'symbol'];
 
+    public function getLogoAttribute($value)
+    {
+        if( in_array($this->symbol, ['AAPL', 'IBM', 'MSFT']))
+            return $value;
+        else
+            return 'storage/' . $value;
+    }
+
     public function owner(): BelongsTo
     {
         return $this->belongsTo(User::class);
