@@ -46,6 +46,6 @@ class User extends Authenticatable
 
     public function companies(): HasMany
     {
-        return $this->hasMany(Company::class);
+        return $this->hasMany(Company::class, 'owner_id');
     }
 }
