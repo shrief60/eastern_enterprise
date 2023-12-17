@@ -12,7 +12,7 @@
     `chmod +x setup && ./setup `
 
 3. Run Database migrations
-    `./vendor/bin/sail artisan migrate --seed`
+    `./vendor/bin/sail artisan migrate:fresh --seed`
 
 ### Network Ports Configuration
 

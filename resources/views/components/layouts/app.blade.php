@@ -17,10 +17,10 @@
         <!-- Page Heading -->
         <header class="bg-gray-500 p-4">
             <div class="container mx-auto flex items-center justify-between">
-                <div class= "flex flex-row items-center">
+                <a href="{{ route('home') }}" wire:navigate class= "flex flex-row items-center">
                     <img src="{{ asset('images/pie-chart.png') }}" alt="Companies" class="rounded-full h-10">
                     <h1 class="text-xl pl-4 font-bold font-mono text-white">Companies</h1>
-                </div>
+                </a>
                 <nav class="hidden sm:flex items-center space-x-4">
                     @auth
                         <p class = "text-white">Welcome, {{ auth()->user()->name }}.</p>
