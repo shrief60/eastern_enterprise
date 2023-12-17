@@ -17,8 +17,8 @@ class CompanyRepository implements CompanyRepositoryInterface
             'symbol' => $parameters['symbol'],
             'logo' => $parameters['logo'],
             'description' => $parameters['description'],
-            'address' => $parameters['description'],
-            'owner_id' => Auth::id()
+            'address' => $parameters['address'],
+            'owner_id' => $parameters['owner_id']
         ]);   
     }
 
